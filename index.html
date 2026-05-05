@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doceria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>DoceMel</header>
+
+    <main>
+        <section class="form-section">
+            <h2>Fazer pedido</h2>
+
+            <input type="text" id="cliente" placeholder="Nome do cliente">
+            <input type="telefone" id="telefone" placeholder="Telefone do cliente">
+
+            <select id="doces">
+                <option value="Selecione um doce"></option>
+                <option value="Brigadeiro">Brigadeiro</option>
+                <option value="Bolo de Cenoura">Bolo de Cenoura</option>
+                <option value="Bolo de Laranja">Bolo de Laranja</option>
+                <option value="Palha Italiana">Palha Italiana</option>
+                <option value="Copo da Felicidade">Copo da Felicidade</option>
+            </select>
+
+            <select id="bebidas">
+                <option value="Selecione uma bebida"></option>
+                <option value="Coca-Cola">Coca-Cola</option>
+                <option value="Água">Água</option>
+                <option value="Suco de maracujá">Suco de maracujá</option>
+            </select>
+            <input type="number" id="preco" placeholder="Preço">
+            <button onclick="adicionarPedido()">Adicionar Pedido</button> 
+        </section>
+
+        <section class="lista-section">
+            <h2>Pedidos</h2>
+            <ul id="listaPedidos"></ul>
+
+            <h3 id="totalPedidos">Total: R$0.00</h3>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
